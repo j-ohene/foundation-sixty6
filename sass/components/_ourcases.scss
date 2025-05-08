@@ -1,0 +1,172 @@
+@use "../abstracts/variables" as v;
+
+.ourcases {
+  background-color: #ffe472;
+  font-family: v.$title-font;
+  padding-bottom: 30px;
+
+  
+  .title {
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: 2rem; 
+      font-family: Arial, Helvetica, sans-serif;
+      @media (max-width: 768px) {
+        font-size: 1.5rem; // Smaller screens
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    p {
+      color: black;
+      text-align: center;
+      height: 100%;
+      width: 700px;
+      font-family: v.$paragraph-font;
+    }
+  }
+}
+
+
+.ourcases-cards-container{
+  background-color: #ffe472;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ourcases-card-con{
+    display: flex;
+    justify-content: center;
+  }
+
+  .ourcases-card {
+    scroll-snap-align: start;
+    flex: flex;
+    justify-content: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    overflow: hidden;
+    border-radius: 5px;
+   
+
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .ourcases-card-content {
+      padding: 20px;
+      h2 {
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  padding: 50px;
+  height: 500px;
+
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 10px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  .carousel-control {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    .carousel-control {
+      display: block;
+    }
+    .left-arrow {
+      left: 0;
+    }
+    .right-arrow {
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-wrapper {
+    .card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      .card {
+        width: calc((100% / 3) - (2 * 20px));
+        height: 200px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
