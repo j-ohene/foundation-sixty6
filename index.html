@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Foundation Sixty6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    
+    <script src="https://unpkg.com/vue@3" defer></script>
+
+    <script async src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script defer type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!--Header for the home Page -->
+
+    <header id="header">
+      <section class="grid-con">
+        <div class="col-start-2 col-span-1 m-col-span-6 l-col-span-1 xl-col-span-2 logo">
+          <img src="assets/logo/SVG/blue_word.svg" alt="logo image"/>
+        </div>
+    
+        <div class="l-col-span-8 l-col-start-2 xl-col-span-8 desktop">
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#cases">Cases</a>
+            <a href="#">Get Involved</a>
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+          </nav>
+        </div>
+      <!-- Hamburger Menu -->
+      <div class="col-span-full m-col-span-full">
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" onclick="toggleMenu()">☰</button>
+          <button class="close-icon" onclick="toggleMenu()">X</button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="menu-item active">Home</a></li>
+            <li><a href="#" class="menu-item">Blog</a></li>
+            <li><a href="#cases" class="menu-item">Cases</a></li>
+            <li><a href="#" class="menu-item">Get Involved</a></li>
+            <li><a href="#" class="menu-item">About</a></li>
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+          
+          </ul>
+        </div>
+      </div>
+        <div class="col-span-1 col-start-1 m-col-start-1 m-col-span-2 l-col-start-11 l-col-span-2 xl-col-start-11 xl-col-span-2 donatebutton tablet desktop">
+          <button class="donate">DONATE</button>
+        </div>
+    
+      </section>
+    </header>
+    
+    <main>
+      <!-- carousel -->
+      <section class="grid-con scroll-carousel">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full carousel-container"
+        >
+          <div class="carousel-slide">
+           
+          
+          </div>
+          <button id="prevBtn" class="carousel-btn prev">
+            <img src="images/icons/left_white.png" alt="previous button" />
+          </button>
+          <button id="nextBtn" class="carousel-btn next">
+            <img src="images/icons/right_white.png" alt="next button" />
+          </button>
+        </div>
+      </section>
+
+
+      <!-- forms for the page  -->
+      <section class="grid-con help-us">
+         <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>HOW YOU CAN HELP US?</h2>
+          <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter">
+          <img src="images/icons/delimter_black.svg" alt="delimiter" />
+        </div>
+          <p>Join Foundation Sixty6 in breaking barriers and building futures.  We aim to achieve this by creating a network of physicians and mental healthcare 
+            providers who will offer counselling services for free, or at a reduced rate, and by 
+            generating donations / funds to support that access. Get involved today—because change starts with you.</p>
+          <div class="grid-con buttons-container">
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 help-button image-box"
+        >
+        <img src="images/icons/donate.png" alt="test-image" />
+        <p>
+          Your donations help build a strong network of medical professionals, making healthcare more accessible for youth across Southern Ontario.</p>
+          
+          <a href="form.html?form=form1" class="form-button-home">Learn more</a>
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 help-button image-box"
+        >
+          <img src="images/icons/medical.png" alt="test-image" />
+          <p>
+            Interested in partnering or sponsoring our mission? Fill out the form below to explore impactful opportunities with Foundation Sixty6.
+          </p>
+          <a href="form.html?form=form2" class="form-button-home">Learn more</a>
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 help-button image-box"
+        >
+          <img src="images/icons/volunteer.png" alt="test-image" />
+          <p>
+            Want to make a difference with your time and skills? Fill out the form below to volunteer with Foundation Sixty6 and help support youth across Southern Ontario.
+          </p>
+          <a href="form.html?form=form3" class="form-button-home">Learn more</a>
+        </div>
+      </div>
+          
+        </div>
+      </section>
+
+      <!--video-->
+      <section class="grid-con carosel">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>WHAT PEOPLE SAYS</h2>
+
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter"
+        >
+
+          <img src="images/delimiter.svg" alt="delimiter" />
+        </div>
+      </section>
+      
+
+        <section class="grid-con video-player">
+        <div
+          class="col-span-full m-sol-span-full l-col-span-full xl-col-span-full video-player"
+        >
+          <video id="player" playsinline controls data-poster="img/intro01.jpg">
+            <source
+              src="videos/Sixty_6_final_webpage_video2.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+
+       <!--  our cases -->
+
+      <section class="grid-con ourcases" id="cases">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>OUR CASES</h2>
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter"
+        >
+          <img src="images/icons/delimter_black.svg" alt="delimiter" />
+        </div>
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full desc"
+        >
+          <p>
+            Here's how we're working to make psychiatric care more accessible in Ontario. Did you knwo that 
+          </p>
+        </div>
+      </section>
+
+      <!-- cards -->
+      <section class="grid-con ourcases-cards-container">
+        <div id="card-5" class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 ourcases-card-con">
+          <div class="ourcases-card">
+            <img src="" alt="" />
+            <div class="ourcases-card-content">
+              <h2>Title 1</h2>
+              <p class="description"></p>
+            </div>
+          </div>
+        </div>
+      
+        <div id="card-6" class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 ourcases-card-con">
+          <div class="ourcases-card">
+            <img src="" alt="" />
+            <div class="ourcases-card-content">
+              <h2>Title 2</h2>
+              <p class="description"></p>
+            </div>
+          </div>
+        </div>
+      
+        <div id="card-7" class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 ourcases-card-con">
+          <div class="ourcases-card">
+            <img src="" alt="" />
+            <div class="ourcases-card-content">
+              <h2>Title 3</h2>
+              <p class="description"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+      <!-- OUR TEAM -->
+
+      <section class="grid-con ourteam">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>MEET OUR TEAM</h2>
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter"
+        >
+          <img src="images/icons/delimter_black.svg" alt="delimiter" />
+        </div>
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full desc"
+        >
+          <p>
+            Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+            Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+            massa.
+          </p>
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full group-image"
+        >
+          <img src="images/team_bg.jpg" alt="group-image" />
+        </div>
+      </section>
+
+        
+        <section class="grid-con team-cards-container">
+          
+          <div
+            id="team-card-9"
+            class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 team-card"
+          >
+            <div class="team-card-image">
+              <img src="" alt="" />
+            </div>
+            <div class="team-card-content">
+              <p></p>
+            </div>
+          </div>
+        
+          <div
+            id="team-card-10"
+            class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 team-card"
+          >
+            <div class="team-card-image">
+              <img src="" alt="" />
+            </div>
+            <div class="team-card-content">
+              <p></p>
+            </div>
+          </div>
+
+          <div
+            id="team-card-11"
+            class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 team-card"
+          >
+            <div class="team-card-image">
+              <img src="" alt="" />
+            </div>
+            <div class="team-card-content">
+              <p></p>
+            </div>
+          </div>
+        
+          <div
+            id="team-card-12"
+            class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 team-card"
+          >
+            <div class="team-card-image">
+              <img src="" alt="" />
+            </div>
+            <div class="team-card-content">
+              <p></p>
+            </div>
+          </div>
+        </section>
+        
+
+      <!-- get in touch section -->
+
+      <section class="grid-con contact-header">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>Get in touch</h2>
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter"
+        >
+          <img src="images/icons/delimter_white.svg" alt="delimiter" />
+        </div>
+      </section>
+
+      <section class="grid-con contact-container">
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 contact-item"
+        >
+          <img src="images/icons/address_black.png" alt="Address Icon" class="icon" />
+          <p class="title">ADDRESS</p>
+          <p>12345 Dundas Street, N6A 1H6<br />London, ON<br />CANADA</p>
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 contact-item"
+        >
+          <img
+            src="images/icons/phone_black.png"
+            alt="Phone Icon"
+            class="icon"
+          />
+          <p class="title">CALL US</p>
+          <p>+1 (519)888-1234</p>
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 contact-item"
+        >
+          <img
+            src="images/icons/email_black.png"
+            alt="Email Icon"
+            class="icon"
+          />
+          <p class="title">EMAIL</p>
+          <p>
+            123mentalhealth@foundation.ca
+          </p>
+        </div>
+      </section>
+
+       <!-- contact forms -->
+
+      <section class="grid-con contact-header" id="contact">
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full title"
+        >
+          <h2>Connect With Us</h2>
+        </div>
+
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full delimiter"
+        >
+          <img src="images/icons/delimter_white.svg" alt="delimiter" />
+        </div>
+      </section>
+
+      <section class="grid-con contact-form">
+       
+        <div id="app"
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full form-group"
+        >
+        <p class="form-key">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+        <form @submit.prevent="submitForm" id="contactForm">
+          <div class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4">
+          <label for="name">First Name: <span class="required">*</span></label>
+          <input type="text" id="name" v-model="formData.name">
+        </div>
+        <div class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4">
+          <label for="email">Email: <span class="required">*</span></label>
+          <input type="email" id="email" v-model="formData.email" >
+          </div>
+
+          <div class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4">
+          <label for="phone">Phone Number: <span class="required">*</span></label>
+          <input type="text" id="phone" v-model="formData.phone">
+        </div>
+
+        <div class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4">
+          <label for="testAnswer">What is 4+4 (Type the number) <span class="required">*</span></label>
+          <input type="text" id="testAnswer" v-model="formData.testAnswer">
+      </div>
+      <div class="col-span-full m-col-span-full l-col-span-full xl-col-span-full">
+          <label for="message">Message: <span class="required">*</span></label>
+          <textarea id="message" v-model="formData.message"></textarea>
+        </div>
+          <input type="hidden" id="honeypot" v-model="formData.honeypot">
+
+          <button :class="{'button__circle': submitted, 'button': true }" type="submit">
+            <div class="container">
+              <span class="tick" v-html="buttonText">Submit</span>
+            </div>
+          </button>
+          
+          <ul v-if="errors">
+            <li v-for="error in errors">{{error}}</li>
+          </ul>
+          <div v-if="responseMessage">
+            {{ responseMessage }}
+          </div>            
+        </form>
+      </div>
+      </section>
+        <!-- <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" />
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4  form-group"
+        >
+          <label for="email_address">Email</label>
+          <input type="email" id="email" placeholder="Your Email" />
+        </div>
+        <div
+          class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4  form-group"
+        >
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Your Phone" />
+        </div>
+        <div
+          class="col-span-full m-col-span-full l-col-span-full xl-col-span-full form-group message"
+        >
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send Your Message</button>
+        
+      </section id="feedback"><p>*Please fill out all required sections</p></section>
+    </form> -->
+
+
+
+    </main>
+
+
+     <footer class="grid-con footer footer-nav" id="footer-links">
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus blanditiis impedit iure quos, beatae aliquid.</p>
+      <h3>CONTACT US</h3>
+      <p>Phone: +1(519)-868-1234</p>
+      <p>Email: 123mentalheath@foundation.ca</p>
+      <p>Address: 1234 Dundas St. N6A 1H6
+        London, On, Canada</p>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>Cooperating institutions</h3>
+      <ul class="footer-nav1 footer-list">
+      
+      </ul>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>Quick Link</h3>
+      <ul class="footer-nav2 footer-list">
+      
+      </ul>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>NEWSLETTER</h3>
+      <p>Select you newsletter, enter your email 
+        address, and click “Subscribe”</p>
+        <form action="">
+          <input type="email" name="email address" >
+          <button id="newsLetter"><img src="images/icons/email_black.png" alt="email" ></button>
+        </form>
+     </div>
+     
+    </footer>
+    <div class="col-span-full l-col-span-full  footer-align footer-nav">
+      <p>Copyright 2024 Sixty6 Mental-health Care Foundation. All Rights Reserved.</p>
+      
+      <a href="#"><img src="./images/icons/linkedin.png" alt="linkedin"></a>
+      <a href="#"><img src="./images/icons/google.png" alt="google"></a>
+      <a href="#"><img src="./images/icons/facebook.png" alt="facebook"></a>
+      <a href="#"><img src="./images/icons/twitter.png" alt="twitter"></a>
+      <a href="#"><img src="./images/icons/ins.png" alt="ins"></a>
+      
+      <button><a href="#header"><img src="./images/icons/top_black.png" alt="top_black"></a></button>
+  </div>
+
+  </body>
+</html>
