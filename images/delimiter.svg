@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="303" height="25" viewBox="0 0 303 25">
+  <g id="delimiter" transform="translate(-447.5 -821)">
+    <line id="Line_3" data-name="Line 3" x2="137" transform="translate(448 833)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_4" data-name="Line 4" x2="135" transform="translate(615 833)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+    <g id="Group_1" data-name="Group 1">
+      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(588 821)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <rect width="25" height="25" stroke="none"/>
+        <rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+      </g>
+      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(593 826)" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <rect width="15" height="15" stroke="none"/>
+        <rect x="0.5" y="0.5" width="14" height="14" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
