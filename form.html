@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" /> 
+    <script  src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script async src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script defer type="module" src="js/main.js"></script>
+  </head>
+  <body data-page="form">
+    <!-- HEADER -->
+  
+    <header id="header">
+      <section class="grid-con">
+        <div class="col-start-2 col-span-1 m-col-span-6 l-col-span-1 xl-col-span-2 logo">
+          <img src="assets/logo/SVG/blue_word.svg" alt="logo image"/>
+        </div>
+    
+        <div class="l-col-span-8 l-col-start-2 xl-col-span-8 desktop">
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#cases">Cases</a>
+            <a href="#">Get Involved</a>
+            <a href="#">About</a>
+            <a href="#">Blogs</a>
+          </nav>
+        </div>
+      <!-- Hamburger Menu -->
+      <div class="col-span-full m-col-span-full">
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" onclick="toggleMenu()">☰</button>
+          <button class="close-icon" onclick="toggleMenu()">X</button>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="menu-item active">Home</a></li>
+            <li><a href="#" class="menu-item">Blog</a></li>
+            <li><a href="#cases" class="menu-item">Cases</a></li>
+            <li><a href="#" class="menu-item">Get Involved</a></li>
+            <li><a href="#" class="menu-item">About</a></li>
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+          
+          </ul>
+        </div>
+      </div>
+        <div class="col-span-1 col-start-1 m-col-start-1 m-col-span-2 l-col-start-11 l-col-span-2 xl-col-start-11 xl-col-span-2 donatebutton tablet desktop">
+          <button class="donate">DONATE</button>
+        </div>
+    
+      </section>
+    </header>
+
+    <!-- Forms -->
+    <main>
+      <section class="form-selector grid-con">
+        <button class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 form-button active" data-index="0">
+          <img src="images/icons/donate.png" alt="Donate icon">
+          <h3>DONATE</h3>
+        </button>
+    
+        <button class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 form-button" data-index="1">
+          <img src="images/icons/medical.png" alt="Medical donation icon">
+          <h3>PROJECT</h3>
+        </button>
+    
+        <button class="col-span-full m-col-span-4 l-col-span-4 xl-col-span-4 form-button" data-index="2">
+          <img src="images/icons/volunteer.png" alt="Volunteer icon">
+          <h3>VOLUNTEER</h3>
+        </button>
+      </section>
+    
+      <div class="form-carousel-wrapper">
+        <div class="form-carousel-track">
+          <!-- Form 1 -->
+          <div class="donation-form">
+            <h1>Donate</h1>
+            <form>
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required>
+    
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+    
+              <label for="amount">Amount *</label>
+              <input type="text" id="amount" name="amount" required>
+    
+              <label for="accountNumber">Account Number *</label>
+              <input type="text" id="accountNumber" name="accountNumber" required>
+    
+              <div class="card-details">
+                <div class="expiry-cvv-group">
+                  <label for="expiryDate">Expiry Date *</label>
+                  <input type="text" id="expiryDate" name="expiryDate" required>
+                </div>
+                <div class="expiry-cvv-group">
+                  <label for="cvv">CVV *</label>
+                  <input type="text" id="cvv" name="cvv" required>
+                </div>
+              </div>
+    
+              <label for="note">Note</label>
+              <textarea id="note" name="note"></textarea>
+    
+              <button type="submit">DONATE</button>
+            </form>
+          </div>
+    
+          <!-- Form 2 -->
+          <div class="donation-form">
+            <h1>Want to Collaborate?</h1>
+            <form>
+              <label for="project">Project Name:</label>
+              <input type="text" id="project" name="project" />
+    
+              <label for="description">Project Description:</label>
+              <textarea id="description" name="description"></textarea>
+    
+              <label for="budget">Budget:</label>
+              <input type="number" id="budget" name="budget" />
+    
+              <button type="submit">Submit Form 2</button>
+            </form>
+          </div>
+    
+          <!-- Form 3 -->
+          <div class="donation-form">
+            <h1>Donate with Time</h1>
+            <form>
+              <label for="volunteer">Volunteer Name:</label>
+              <input type="text" id="volunteer" name="volunteer" />
+    
+              <label for="hours">Hours Available:</label>
+              <input type="number" id="hours" name="hours" />
+    
+              <label for="skills">Skills:</label>
+              <textarea id="skills" name="skills"></textarea>
+    
+              <button type="submit">Submit Form 3</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    
+    <footer class="grid-con footer " id="footer-links">
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus blanditiis impedit iure quos, beatae aliquid.</p>
+      <h3>CONTACT US</h3>
+      <p>Phone: +1(519) 868-1234</p>
+      <p>Email: 123mentalheath@foundation.ca</p>
+      <p>Address: 1234 Dundas St. N6A 1H6
+        London, On, Canada</p>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>Cooperating institutions</h3>
+      <ul>
+        <li><a href="">Blue Sunflower Corporation (BSCI)</a></li>
+        <li><a href="">Fanshawe College</a></li>
+        <li><a href="">Sixty6 Mentalheath Foundation</a></li>
+        <li><a href="">CANADA Heath</a></li>
+        <li><a href="">Ontario Healthcare</a></li>
+        <li><a href="">Canadian Red Cross(  )+</a></li>
+      </ul>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>Quick Link</h3>
+      <ul>
+        <li><a href="">Charity Merchandise</a></li>
+        <li><a href="">Cases</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Term of use</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Legal disclaimer</a></li>
+      </ul>
+     </div>
+     <div class="l-col-span-3 m-col-span-3 col-span-1">
+      <h3>NEWSLETTER</h3>
+      <p>Select you newsletter, enter your email 
+        address, and click “Subscribe”</p>
+        <form action="">
+          <input type="email" name="email address" >
+          <button id="newsLetter"><img src="images/icons/email_black.png" alt="email" ></button>
+        </form>
+     </div>
+     
+    </footer>
+    <div class="col-span-full l-col-span-full  footer-align">
+      <p>Copyright 2024 Sixty6 Mental-health Care Foundation. All Rights Reserved.</p>
+      
+      <a href="#"><img src="./images/icons/linkedin.png" alt="linkedin"></a>
+      <a href="#"><img src="./images/icons/google.png" alt="google"></a>
+      <a href="#"><img src="./images/icons/facebook.png" alt="facebook"></a>
+      <a href="#"><img src="./images/icons/twitter.png" alt="twitter"></a>
+      <a href="#"><img src="./images/icons/ins.png" alt="ins"></a>
+      
+      <button><a href="#header"><img src="./images/icons/top_black.png" alt="top_black"></a></button>
+  </div>
+  </body>
+</html>
